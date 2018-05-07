@@ -1,5 +1,6 @@
+	</div>
 		<footer id = "footer">
-			Contact
+			<h2>Contact</h2>
 		</footer>
 	</body>
 </html>
