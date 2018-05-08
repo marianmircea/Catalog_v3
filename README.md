@@ -1,6 +1,7 @@
 # Catalog_v3
 Catalog pentru clasele 9 - 12 pe structura MVC (the most simple possible)
 ### Update log:
+- upd 8mai = add features builded in previous version; develop forms to keep the conform info (mail, name, etc), if some fields are wrong and have to return to fill them again;
 - upd 7mai = rewrite the code, adapted to local database / tables;
 - upd 6mai = rewrite the code, adapted to local database / table;
 - upd 5mai = study the tutorial regarding last received MVC structure;

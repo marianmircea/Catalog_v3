@@ -1,5 +1,5 @@
 <?php
-	require_once ('/confg/path.php');
+	require_once ('D:/wamp/www/Catalog_v3/confg/path.php');
 ?>
 <h2>Login</h2>
 <div id="login_box">
@@ -15,4 +15,28 @@
 		<p><input type = "submit" value = "Acces"/>
 			<input type="reset"></p>
 	</form>
+<?php
+	if (!isset($_GET['login'])) {
+		return;
+		//exit();
+	}  else {
+			switch ($_GET['login']) {
+				case 'empty': 
+					echo "Lipseste user + parola ....";
+				break;
+				case 'usr':
+					echo "Lipseste user ...";
+				break;
+				case 'pw':
+					echo "Lipseste parola ...";
+				break;
+				case 'mail':
+					echo "Invalid email ...";
+				break;
+				case 'unkn':
+					echo "User / parola necunoscute, va rugam folositi functia Sign-up ...";
+				break;
+			}
+	}
+?>
 </div>
