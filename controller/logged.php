@@ -4,7 +4,11 @@
 		function __construct () {
 			parent::__construct();
 		}
-		function index() {
-			$this -> view -> render('logged');
+		function set_file ($name) {
+			$this -> file = $name;
 		}
+		function index() {
+			$this -> view -> render($this -> file);
+		}
+		
 	}

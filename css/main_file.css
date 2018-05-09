@@ -18,7 +18,7 @@ body {
 
 #footer {
 	padding: 5px;
-	background: #4080bf;
+	background: #003d99;
 	color: #ffffff;
 	text-align: center;
 }
@@ -47,4 +47,47 @@ a {
 	overflow: auto;
 	margin-bottom: 10px;
 	text-align: left;
+}
+ul#two_buttons {
+	list-style-type: none;
+	float: right;
+	
+	text-decoration: none;
+	margin-top: 5px;
+	margin-right: -14px;
+	overflow: auto;
+}
+#two_buttons li {
+	display: inline;
+	font-size: 16px;
+	margin-right: 15px;
+	text-decoration: none;
+	color: white;
+	background-color: #0066cc;
+	padding: 5px;
+	float: right;
+	text-align: center;
+}
+#date_identificare {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+	margin: auto;
+}
+
+#date_identificare td, #date_identificare th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#date_identificare tr:nth-child(even){background-color: #f2f2f2;}
+
+#date_identificare tr:hover {background-color: #ddd;}
+
+#date_identificare th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
