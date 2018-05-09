@@ -1,7 +1,8 @@
 <?php
 	require_once 'D:/wamp/www/Catalog_v3/confg/path.php';
 	require URLP.'model/select_user.php';
-	
+	$adu = new Select_Users;
+	//$adu = new Select_Users('elevi', $_GET['id']);
 ?>
 <section>
 	<ul id="two_buttons">
@@ -20,22 +21,27 @@
 		<tr>
 			<td>
 <?php
-	echo $_GET['id'];
+	//echo $_GET['id'];
+	//print_r($adu -> select('elevi', $_GET['id']));
+	echo $adu -> select('elevi', $_GET['id'])['nume'];
 ?>
 					</td>
 					<td>
 <?php
-	echo $_GET['id'];
+	//echo $_GET['id'];
+	echo $adu -> select('elevi', $_GET['id'])['prenume'];
 ?>
 					</td>
 					<td>
 <?php
-	echo $_GET['id'];
+	//echo $_GET['id'];
+	echo $adu -> select('elevi', $_GET['id'])['nr_matricol'];
 ?>
 					</td>
 					<td>
 <?php
-	echo $_GET['id'];
+	//echo $_GET['id'];
+	echo $adu -> select('elevi', $_GET['id'])['email'];
 ?>					
 					</td>
 				  </tr>
