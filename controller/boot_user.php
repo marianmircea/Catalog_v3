@@ -1,7 +1,8 @@
 <?php
 	//Controller de afisare pe tip de utilizator ...
-	
-	//require '/../model/session.php';
+	require_once 'D:/wamp/www/Catalog_v3/confg/path.php';
+	require URLP.'controller/session.php';
+	Session::init();
 	class Bootuser {
 		function __construct () {
 			echo "suntem in boot user<br>";

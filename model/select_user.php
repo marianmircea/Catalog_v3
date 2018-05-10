@@ -5,7 +5,7 @@
 		function select ($user, $id) {
 			$stm = $this->connection()->prepare('SELECT * FROM '.$user.' WHERE id=?');
 			$stm -> execute([$id]);
-			$info = array ('nume', 'prenume', 'nr_matricol', 'email');
+			$info = array ('nume', 'prenume', 'email');
 			while ($row = $stm->fetch()) {
 				foreach ($info as $item) {
 					$test[$item] = $row[$item];
@@ -13,6 +13,5 @@
 			}
 			return $test;
 		}
-
 		
 	}

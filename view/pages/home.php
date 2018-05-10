@@ -1,5 +1,6 @@
 <?php
 	echo "Welcome!";
+	//echo session_status();
 ?>
 	<p>Hello! Your credentials are:<br>
 <?php

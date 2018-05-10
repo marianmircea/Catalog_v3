@@ -39,6 +39,7 @@
 				}
 			$tip = $test[0];
 			$id = $test[1];
+			//@session_start();
 			header ('location: ../controller/boot_user.php?tip='.$tip.'&id='.$id);
 		}
 	}
