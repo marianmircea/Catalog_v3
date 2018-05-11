@@ -1,6 +1,7 @@
 # Catalog_v3
 Catalog pentru clasele 9 - 12 pe structura MVC (the most simple possible)
 ### Update log:
+- upd 11mai = change the way to transmit data between pages - no URL but use $_SESSION variables;
 - upd 10mai = develop functionality for different pages; show messages depending on the logged user type;
 - upd 9mai = develop MVC structure; develop functionality for different pages;
 - upd 8mai = add features builded in previous version; develop filters in login form, if some fields are wrong and have to return to fill them again;

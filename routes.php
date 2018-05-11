@@ -32,4 +32,3 @@
 		} else {
 			call('pages', 'error');
 			}
-?>

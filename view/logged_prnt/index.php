@@ -1,5 +1,10 @@
 <?php
 	require_once 'D:/wamp/www/Catalog_v3/confg/path.php';
+	require URLP.'controller/session.php';
+	if (session_status() == PHP_SESSION_NONE) {
+		Session::init();
+		//session_start();
+		}
 	require URLP.'model/select_user.php';
 	$adu = new Select_Users;
 	$table = 'parinti';
@@ -21,25 +26,25 @@
 		<tr>
 			<td>
 <?php
-	echo $adu -> select($table, $_GET['id'])['nume'];
+	echo $adu -> select($table, $_SESSION['user_id'])['nume'];
 ?>
 			</td>
 			<td>
 <?php
 	//echo $_GET['id'];
-	echo $adu -> select($table, $_GET['id'])['prenume'];
+	echo $adu -> select($table, $_SESSION['user_id'])['prenume'];
 ?>
 			</td>
 			<td>
 <?php
 	//echo $_GET['id'];
-	echo $adu -> select($table, $_GET['id'])['email'];
+	echo $adu -> select($table, $_SESSION['user_id'])['email'];
 ?>
 			</td>
 			<td>
 <?php
 	//echo $_GET['id'];
-	//echo $adu -> select($table, $_GET['id'])['nr_matricol'];
+	echo $adu -> select($table, $_SESSION['user_id'])['tel_contact'];
 ?>					
 			</td>
 			</tr>
