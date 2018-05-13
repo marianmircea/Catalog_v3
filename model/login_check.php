@@ -37,14 +37,13 @@
 				header ('Location: ../?controller=pages&action=login&login=unkn');
 				exit();
 				}
-			//$tip = $test[0];
-			//$id = $test[1];
 			session_start();
-			//require URLP.'controller/session.php';
-			//Session::init();
 			$_SESSION['user_type'] = $test[0];
 			$_SESSION['user_id'] = $test[1];
-			header ('location: ../controller/boot_user.php');
+			echo $_SESSION['user_id'];
+			//header ('location: ../controller/boot_user.php');
+			require URLP.'controller/boot_user.php';
+			$tt = new Bootuser;
 		}
 	}
 	$result = new check();

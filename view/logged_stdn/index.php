@@ -1,11 +1,12 @@
 <?php
 	require_once 'D:/wamp/www/Catalog_v3/confg/path.php';
-	require_once URLP.'controller/session.php';
+	//require_once URLP.'controller/session.php';
 	if (session_status() == PHP_SESSION_NONE) {
+		//require URLP.'controller/session.php';
 		Session::init();
 		//session_start();
 		}
-	echo session_status();
+	echo session_status()."suntem in index - elev logat";
 		echo $_SESSION['user_id'];
 	require URLP.'model/select_user.php';
 	$adu = new Select_Users;
