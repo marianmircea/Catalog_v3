@@ -95,3 +95,33 @@ ul#two_buttons {
 div.clear {
     clear: both;
 }
+#afisare_note {
+    border-collapse: collapse;
+	border: 1px solid black;
+    width: 70%;
+	margin: auto;
+}
+
+#afisare_note th, #afisare_note td {
+    text-align: left;
+    padding: 8px;
+}
+
+#afisare_note tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+#afisare_note th {
+    background-color: #0080ff;
+    color: white;
+	border-bottom: 1px solid black;
+}
+.form_boxes {
+	width: 310px;
+	background-color: #0066cc;
+	color: #ffffff;
+	margin: auto;
+	margin-top: 50px;
+	padding-left: 15px;
+	overflow: auto;
+	margin-bottom: 50px;
+}

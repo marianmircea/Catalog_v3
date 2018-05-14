@@ -10,7 +10,6 @@
 				$controller = new PostController();
 			break;
 			case 'about_us':
-				//require_once ('model/post.php');
 				$controller = new PagesController();
 			break;
 			case 'login':

@@ -8,5 +8,4 @@
 		$action = 'home';
 		}
 	require_once('view/layout.php');
-	echo session_status();
 ?>
