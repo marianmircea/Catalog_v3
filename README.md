@@ -1,6 +1,7 @@
 # Catalog_v3
 Catalog pentru clasele 9 - 12 pe structura MVC (the most simple possible)
 ### Update log:
+- upd 15mai = solve the problem - session vanished ...
 - upd 14mai = solve the problem: on navigation between pages (session vanished); temporary solution - GET; develop next pages ...
 - upd 13mai = solve the problem with session variables, on navigation between pages (session vanished);
 - upd 12mai = support the navigation between pages with session solution, after login procedure;

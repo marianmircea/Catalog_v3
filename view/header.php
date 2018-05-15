@@ -1,6 +1,6 @@
 <?php
 	require_once ('D:/wamp/www/Catalog_v3/confg/path.php');
-	require_once URLP.'controller/session.php';
+	//require_once URLP.'controller/session.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@
 <?php
 	} else {
 ?>
-				<li><a href = '<?php Session::destroy(); ?>/Catalog_v3'>Logout</a></li>
+				<li><a href = '<?php //Session::destroy(); ?>/Catalog_v3'>Logout</a></li>
 <?php
 	}
 ?>
