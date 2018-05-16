@@ -1,5 +1,6 @@
 <?php
-	require 'view_controller.php';
+	require_once 'D:/wamp/www/Catalog_v3/confg/path.php';
+	require_once URLP.'controller/view_controller.php';
 	class Logged extends Viewcontroller {
 		function __construct () {
 			parent::__construct();

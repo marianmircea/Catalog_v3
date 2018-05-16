@@ -27,8 +27,10 @@
 				header ('Location: ../?controller=pages&action=login&login=unkn');
 				exit();
 				}
-			require URLP.'controller/session.php';
-			Session::init();
+			if (session_status() == PHP_SESSION_NONE) {
+				require URLP.'controller/session.php';
+				Session::init();
+				}
 			$_SESSION['user_type'] = $test[0];
 			$_SESSION['user_id'] = $test[1];
 			require URLP.'controller/boot_user.php';

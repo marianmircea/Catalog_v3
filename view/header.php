@@ -19,11 +19,11 @@
 <?php
 	if (session_status() == PHP_SESSION_NONE) {
 ?>
-				<li><a href = '?controller=pages&action=login'>Login</a></li>
+				<li><a href = '<?php echo URLH; ?>?controller=pages&action=login'>Login</a></li>
 <?php
 	} else {
 ?>
-				<li><a href = '<?php //Session::destroy(); ?>/Catalog_v3'>Logout</a></li>
+				<li><a href = '<?php echo URLH; ?>controller/logout.php'>Logout</a></li>
 <?php
 	}
 ?>

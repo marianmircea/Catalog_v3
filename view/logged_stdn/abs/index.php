@@ -1,10 +1,9 @@
 <?php
-	//echo $_SESSION['user_type'];
-	echo session_status();
+	//require 'D:/wamp/www/Catalog_v3/confg/path.php';
+	//echo session_status();
 ?>
 <div class = "form_boxes">
-	<!--<form action="php\vizz_abs.php" method="post">-->
-	<form method="get">
+	<form action="<?php echo URLH; ?>view/logged_stdn/viz_abs.php" method="post">
 		<p>Clasa   <select name="clasa">
 			<option value="0">...</option>
 			<option value="9">9</option>
