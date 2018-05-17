@@ -4,9 +4,9 @@
 		function __construct() {
 		}
 		public function render ($fill) {
-			require URLP.'view/header.php';
+			//require URLP.'view/header.php';
 			require URLP.'view/'.$fill.'/index.php';
-			require URLP.'view/footer.php';
+			//require URLP.'view/footer.php';
 			
 		}
 	}

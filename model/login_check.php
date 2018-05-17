@@ -33,8 +33,10 @@
 				}
 			$_SESSION['user_type'] = $test[0];
 			$_SESSION['user_id'] = $test[1];
-			require URLP.'controller/boot_user.php';
-			$tt = new Bootuser;
+			//require URLP.'controller/boot_user.php'; probe cu un index in folder logged ...
+			//$tt = new Bootuser;
+			header ('Location: '.URLH.'view/logged/');
+			//header ('Location: ../view/logged/');
 		}
 	}
 	$result = new check();

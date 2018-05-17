@@ -15,8 +15,9 @@
 <section>
 	<ul id = "two_buttons">
 		<!--<li><a href="Vizz_elev_note.php" target="_self">Note</a></li>-->
-		<li><a href="<?php echo URLH; ?>view/under_con/" target="_self">Note</a></li>
-		<li><a href="<?php echo URLH; ?>controller/abs_stdn.php">Absente</a></li>
+		<li><a href="<?php echo URLH; ?>view/under_con/">Note</a></li>
+		<!--<li><a href="<?php echo URLH; ?>controller/abs_stdn.php">Absente</a></li>-->
+		<li><a href="<?php echo URLH; ?>view/logged/?ok=1">Absente</a></li>
 	</ul>
 	<div class = "clear"></div>
 	<h3>Datele D-voastra de identificare sunt urmatoarele:</h3>
